@@ -3,7 +3,7 @@ const error = require('../middlewares/error');
 
 const home = require('../routes/home');
 
-module.exports = function(app) {
+module.exports = (app) => {
     app.use(bodyParser.urlencoded({
         extended: false
     }));

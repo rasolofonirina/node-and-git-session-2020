@@ -1,6 +1,6 @@
 const  winston = require('winston');
 const config = require('config');
 
-module.exports = function() {
+module.exports = () => {
     winston.info(config.get('name'));
 };
